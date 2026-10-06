@@ -6,9 +6,52 @@
         <link rel="icon" sizes="13*13" href="images/favicon.png" type="images/png">
     </head>
     <body>
+        <h1><i><mark>Text</mark> Formatting</i></h1>
+        <p>this is normal text</p>
+        <p>This is <b>bold</b> text</p>
+        <p> this is <u>underlined</u>text</p>
+        <p>this is <del>deleted</del> text</p>
+        <p>this is <sub>sub</sub> text</p>
+        <p>this is <sup>super</sup> text</p>
+        <p>this is <big>Big</big> text</p>
+        <p>this is <small>small</small> text</p>
+        <p>this is <tt>monospaced</tt> text</p>
+        <p>this is <i>italic</i> text</p>
+        <p>this is <mark style="background-color:skyblue">Mark</mark> text</p>
+        <br>
+        <h1>Lists</h1>
+        <ol>
+        <li>
+        <h5>Unordered list</h5>
+        
+            
+        <ul>
+            <li>hi</li>
+            <li>welcome</li>
+            <li>greetings</li>
+        </ul>
+            </li>
+            <li>
+        <h5>ordered list</h5>
+        <ol>
+            <li>hi</li>
+            <li>welcome</li>
+            <li>greetings</li>
+        </ol>
+        </li>
+        <li>
+        <h5>Description list</h5>
+        <dl>
+            <dt>python</dt>
+            <dd>An interpreted language</dd>
+            <dt>Java</dt>
+            <dd>compiler language, code -> byte code</dd>       
+         </dl>
+         </li>
+         </ol>
         <P>
             <h1>Hey I'm new to web dev. </h1>
-            <h6>And i can do learn it.</h6>
+            <!--<h6>And i can do learn it.</h6>-->
             I hope all goes well.
             <br>
             <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -30,7 +73,36 @@
                 
             </audio>
             </P>
-            
+        <h3>Weekly Table</h3>
+        <table border="1" style="background-color:black">
+            <tr style="background-color:blue">
+                <th width="100">Sunday</th>
+                <th width="100">Monday</th>
+                <th width="100">Tuesday</th>
+                <th width="100">Wednesday</th>
+                <th width="100">Thursday</th>
+                <th width="100">Friday</th>
+                <th width="100">Saturday</th>
+            </tr>
+            <tr align="center" style="background-color:beige">
+                <td>Holiday</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>Weekend</td>
+            </tr>
+        </table>
+        <button onclick="ffunction()" style="background-color: beige;border-radius: 10px;font-size:13px">
+            Click me
+        </button>
+        <p id="greet">hi</p>
+        <script>
+            function ffunction(){
+                document.getElementById("greet").innerHTML="bye"; <!--changes the value of element from hi ton bye just like assignment varable in prog-->
+            }
+        </script>
 
     </body>
 </html>
